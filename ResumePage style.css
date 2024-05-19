@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #2b2102;
+  --primary-color-dark: rgb(244, 38, 7);
+  --secondary-color: #ffffff;
+  --text-dark: #000000;
+  --text-light: #ffffff;
+  --extra-light: #f1f1f2;
+  --max-width: 1500px;
+  --background-light: #f9f9f9;
+  --background-dark: #333;
+  --background-secondary: #f0e5d8;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-light);
+  color: var(--text-dark);
+}
+
+.nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #825e45;
+  z-index: 99;
+}
+
+.nav__content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+nav .logo a:hover {
+  color: var(--primary-color-dark);
+}
+
+nav .checkbox {
+  display: none;
+}
+
+nav input {
+  display: none;
+}
+nav .checkbox i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 200px 300px 250px; 
+}
+
+.section-container {
+  background-color: #dcd7cc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.second-background {
+  background-color: var(--background-secondary);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.section-content {
+  background-color: #f6f4f0f3;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+h2 {
+  color: #000000;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.entry {
+  border: 1px solid #270808;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.centered-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.centered-image {
+  max-width: 100%;
+  border-radius: 50%;
+  height: 240px;
+}
+
+.animated {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url('img/resume background.jpg'); 
+  background-size: auto; 
+  background-position: center; 
+  color: var(--text-dark);
+}
+
+footer {
+  background-color: var(--background-dark);
+  color: var(--text-light);
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+

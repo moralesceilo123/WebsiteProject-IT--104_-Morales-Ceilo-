@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #2b2102;
+  --primary-color-dark: rgb(244, 38, 7);
+  --secondary-color: #ffffff;
+  --text-dark: #000000;
+  --text-light: #000000;
+  --extra-light: #f1f1f2;
+  --max-width: 1200px; 
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #825e45;
+  z-index: 99;
+}
+
+.nav__content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 7% 2%; 
+}
+
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+
+nav .logo a:hover {
+  color: var(--primary-color-dark);
+}
+
+nav .checkbox {
+  display: none;
+}
+
+nav input {
+  display: none;
+}
+
+nav .checkbox i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.testimonials {
+  background-color: #e9c4a1;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.testimonial {
+  background-color: #e2daca; 
+  padding: 30px;
+  border-radius: 30px; 
+  margin-bottom: 30px;
+}
+
+blockquote {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+cite {
+  font-weight: bold;
+}
+
+footer {
+  background-color: #333; 
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url('img/testi backg 1.jpg'); 
+  background-size: auto; 
+  background-position: center;  
+  color: var(--text-dark);
+}
+
